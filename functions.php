@@ -143,6 +143,7 @@ function theme_enqueue_styles() {
             array(
                 'ajax_url' => admin_url( 'admin-ajax.php' ),
                 'redirecturl' => home_url(),
+                'themeurl' => get_stylesheet_directory_uri(),
             )
         );
     }

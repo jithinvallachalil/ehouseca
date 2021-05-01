@@ -1,6 +1,6 @@
 // goto top
 $('#folder-img').click(function() {
-    let gifUrl = '<?php echo get_stylesheet_directory_uri(); ?>/images/gif-' + $('#folder-img').data('gif') + '.gif';
+    let gifUrl = ajax.themeurl + '/images/gif-' + $('#folder-img').data('gif') + '.gif';
     console.log(gifUrl);
     $('#gif-home-image').attr('src', gifUrl);
     $('#folder-img').hide();
@@ -33,16 +33,8 @@ function changeTopBackground(sectionId) {
     }
 
     switch (sectionId) {
-        case 1:
-            // Main Banner
-            // $('#ehouse-home-top').css('background', 'linear-gradient(to right, #102d93, #0052ec)');
-            // // $('#ehouse-home-bottom').css('background', 'url("<?php echo get_stylesheet_directory_uri(); ?>/images/home-file-green.png")');
-            // $('#folder-img').data('gif', 'blue');
-            // $('#folder-img').data('redirection', '<?php echo site_url(); ?>/our-services/');
 
-            // $('#home-top-title, #file-title').html('AUDIT &<br>RISK');
-            // $('#folder-img').attr('src', '<?php echo get_stylesheet_directory_uri(); ?>/images/file-blue.png');
-            // $('#folder-anchor').attr('src', '<?php echo site_url(); ?>/auditing-and-assurance/');
+        case 1:
             $('#video-banner').fadeIn();
             break;
         case 2:
@@ -50,55 +42,55 @@ function changeTopBackground(sectionId) {
             $('#ehouse-home-top').css('background', 'linear-gradient(to right, #102d93, #0052ec)');
             // $('#ehouse-home-bottom').css('background', 'url("<?php echo get_stylesheet_directory_uri(); ?>/images/home-file-green.png")');
             $('#folder-img').data('gif', 'blue');
-            $('#folder-img').data('redirection', '<?php echo site_url(); ?>/our-services/audit-risks/');
+            $('#folder-img').data('redirection', ajax.redirecturl + '/our-services/audit-risks/');
 
             $('#home-top-title, #file-title').html('AUDIT &<br>RISK').css('color', '#102d93');
-            $('#folder-img').attr('src', '<?php echo get_stylesheet_directory_uri(); ?>/images/file-blue.png');
-            $('#folder-anchor').attr('src', '<?php echo site_url(); ?>/auditing-and-assurance/');
+            $('#folder-img').attr('src', ajax.themeurl + '/images/file-blue.png');
+            $('#folder-anchor').attr('src', ajax.redirecturl + '/auditing-and-assurance/');
             break;
         case 3:
             // Brown
             $('#ehouse-home-top').css('background', 'linear-gradient(to right, #6d3103, #a8621c)');
             // $('#ehouse-home-bottom').css('background', 'url("<?php echo get_stylesheet_directory_uri(); ?>/images/home-file-blue.png")');
             $('#folder-img').data('gif', 'brown');
-            $('#folder-img').data('redirection', '<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/');
+            $('#folder-img').data('redirection', ajax.redirecturl + '/our-services/company-formations-and-corporate-services/');
 
-            $('#folder-img').attr('src', '<?php echo get_stylesheet_directory_uri(); ?>/images/file-brown.png');
+            $('#folder-img').attr('src', ajax.themeurl + '/images/file-brown.png');
             $('#home-top-title, #file-title').html('COMPANY<br>FORMATIONS').css('color', '#6d3103');
-            $('#folder-anchor').attr('src', '<?php echo site_url(); ?>/our-services/business-consultant/');
+            $('#folder-anchor').attr('src', ajax.redirecturl + '/our-services/business-consultant/');
             break;
         case 4:
             // Red
             $('#ehouse-home-top').css('background', 'linear-gradient(to right, #aa1834, #e7455c)');
             // $('#ehouse-home-bottom').css('background', 'url("<?php echo get_stylesheet_directory_uri(); ?>/images/home-file-brown.png")');
             $('#folder-img').data('gif', 'red');
-            $('#folder-img').data('redirection', '<?php echo site_url(); ?>/our-services/business-advisory/');
+            $('#folder-img').data('redirection', ajax.redirecturl + '/our-services/business-advisory/');
 
-            $('#folder-img').attr('src', '<?php echo get_stylesheet_directory_uri(); ?>/images/file-red.png');
+            $('#folder-img').attr('src', ajax.themeurl + '/images/file-red.png');
             $('#home-top-title, #file-title').html('BUSINESS<br>ADVISORY').css('color', '#aa1834');
-            $('#folder-anchor').attr('src', '<?php echo site_url(); ?>/our-services/business-advisory/');
+            $('#folder-anchor').attr('src', ajax.redirecturl + '/our-services/business-advisory/');
             break;
         case 5:
             // Grey
             $('#ehouse-home-top').css('background', 'linear-gradient(to right, #4c4c4c, #969696)');
             // $('#ehouse-home-bottom').css('background', 'url("<?php echo get_stylesheet_directory_uri(); ?>/images/home-file-grey.png")');
             $('#folder-img').data('gif', 'grey');
-            $('#folder-img').data('redirection', '<?php echo site_url(); ?>/our-services/vat-excise-tax/');
+            $('#folder-img').data('redirection', ajax.redirecturl + '/our-services/vat-excise-tax/');
 
-            $('#folder-img').attr('src', '<?php echo get_stylesheet_directory_uri(); ?>/images/file-grey.png');
+            $('#folder-img').attr('src', ajax.themeurl + '/images/file-grey.png');
             $('#home-top-title, #file-title').html('VAT, EXCISE &<br>TAX').css('color', '#4c4c4c');
-            $('#folder-anchor').attr('src', '<?php echo site_url(); ?>/our-services/vat-excise-tax/');
+            $('#folder-anchor').attr('src', ajax.redirecturl + '/our-services/vat-excise-tax/');
             break;
         case 6:
             // Green
             $('#ehouse-home-top').css('background', 'linear-gradient(to right, #02653d, #34cca0)');
             // $('#ehouse-home-bottom').css('background', 'url("<?php echo get_stylesheet_directory_uri(); ?>/images/home-file-red.png")');
             $('#folder-img').data('gif', 'green');
-            $('#folder-img').data('redirection', '<?php echo site_url(); ?>/our-services/intellectual-properties/');
+            $('#folder-img').data('redirection', ajax.redirecturl + '/our-services/intellectual-properties/');
 
-            $('#folder-img').attr('src', '<?php echo get_stylesheet_directory_uri(); ?>/images/file-green.png');
+            $('#folder-img').attr('src', ajax.themeurl + '/images/file-green.png');
             $('#home-top-title, #file-title').html('INTELLECTUAL<br>PROPERTIES').css('color', '#02653d');
-            $('#folder-anchor').attr('src', '<?php echo site_url(); ?>/our-services/intellectual-properties/');
+            $('#folder-anchor').attr('src', ajax.redirecturl + '/our-services/intellectual-properties/');
             break;
     }
 
@@ -124,16 +116,8 @@ $(window).bind('mousewheel', function(event) {
         console.log(sectionId);
         if (sectionId > 7) {
             $('#ehouse-home-top').data('srollid', 6);
-            // disableScroll();
-            // window.scrollTo(-10, -10);
-            // scrollToTopOnScrollCheck();
-            // $(window).on('scroll', scrollToTopOnScrollCheck)
-            // $("html, body").animate({ scrollTop: -4 }, 100);
-            // setTimeout(() => {
 
             $('#new-footer').slideUp();
-            //     enableScroll();
-            // }, 1200);
 
             changeTopBackground(6);
         } else if (sectionId > 0) {
@@ -153,8 +137,6 @@ $(window).bind('mousewheel', function(event) {
     enableScroll();
 });
 
-// left: 37, up: 38, right: 39, down: 40,
-// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
 
 function preventDefault(e) {

@@ -21,7 +21,6 @@ get_header();
 
 <!-- Navbar BG -->
 <div id="navbar-bg"></div>
-<link rel='stylesheet' id='font-awesome-5-all-css'  href='<?php echo site_url(); ?>/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.2.1' type='text/css' media='all' /> 
 
 <div id="video-banner">
 	<div id="video-bg">

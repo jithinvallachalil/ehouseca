@@ -34,6 +34,14 @@ h6,
     font-family: 'Franklin Gothic Bold' !important;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 #custom-header {
     position: absolute;
     top: 0;
@@ -227,10 +235,9 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
 .gif-home {
     display: none;
-    transform: scale(5.9) rotate(355deg) !important;
     position: absolute !important;
-    top: 4px !important;
-    left: 78px !important;
+    top: -370px !important;
+    left: -370px !important;
 }
 
 .main-menu .sub-menu {
@@ -259,7 +266,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 #services-mainmenu:hover #services-list {
-    display: block;
+    display: block !important;
 }
 
 .services-overlay {
@@ -809,7 +816,8 @@ h2.services-contact-title {
 }
 
 #home-about-list {
-    margin: 0;
+    margin: -6px 0 0;
+    padding: 0;
 }
 
 #home-about-list li {
@@ -926,10 +934,6 @@ h2.services-contact-title {
     margin: 1rem 0;
 }
 
-#video-bottom h3 {
-    margin: 0;
-}
-
 .text-center {
     text-align: center;
 }
@@ -1004,4 +1008,19 @@ h2.services-contact-title {
     max-width: 150px;
     float: left;
     margin: 1rem;
+}
+
+#services-list :after {
+    display: none !important;
+}
+
+#services-menu .dropdown-menu {
+    display: block;
+    background: transparent;
+    border: none;
+    margin: 0;
+}
+
+#services-menu>ul>li.dropdown>a.dropdown-toggle {
+    text-transform: uppercase;
 }
