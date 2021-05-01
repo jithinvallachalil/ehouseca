@@ -1,0 +1,270 @@
+.aux-full-width #inner-body {
+    overflow: hidden;
+}
+
+.home-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+
+.home-content-wrap {
+    display: flex;
+    align-items: center !important;
+    width: 100%;
+}
+
+#ehouse-home-top {
+    background: linear-gradient(to right, #102d93, #0052ec);
+    transition: .5s ease-out;
+    height: 50vh;
+}
+
+#ehouse-home-bottom {
+    height: 50vh;
+    background-size: 70% !important;
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackground 150s linear infinite alternate;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+
+h1,
+h2 {
+    font-family: 'Franklin Gothic' !important;
+    color: #fff;
+}
+
+#new-footer {
+    display: none;
+}
+
+#home-wrapper {
+    position: relative;
+}
+
+#folder-wrapper {
+    position: absolute;
+    width: 270px;
+    top: calc(50% - 135px);
+    left: calc(50% - 121.7px);
+    transition: 0.5s ease-in;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#file-wrapper {
+    z-index: 5;
+}
+
+
+/* #folder-wrapper:hover #file-wrapper {
+		transform: translate(49px,-6px);
+	} */
+
+.folder-container {
+    position: relative;
+}
+
+#base-folder {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+#animated-folder {
+    position: absolute;
+    top: 0;
+    z-index: 6;
+}
+
+#base-file {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    transform: rotate(-5deg);
+    transition: 0.5s ease;
+}
+
+
+/* #folder-wrapper:hover #base-file {
+		transform: translate(158px, -25px);
+	} */
+
+#folder-title {
+    width: 100%;
+    position: absolute;
+    top: 6rem;
+    left: -13px;
+    transform: skew(11deg, 349deg);
+    color: #d6d6d6;
+    font-weight: 600;
+    text-align: center;
+    font-size: 23px;
+}
+
+#file-title {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    transform: rotate( -9deg);
+    transition: 0.5s ease;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+}
+
+#d-none {
+    display: none;
+}
+
+#navbar-bg {
+    display: none;
+    width: 100%;
+    min-height: 252px;
+    position: fixed;
+    top: 0;
+    background: #000000ad;
+    z-index: 1;
+}
+
+#ehouse-home-dots {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+}
+
+#ehouse-home-dots i {
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+#ehouse-home-dots i:hover {
+    transform: scale(1.1);
+}
+
+#Hilights {
+    position: absolute;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    #base-folder {
+        top: 10px !important;
+    }
+    #folder-img {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #navbar-bg {
+        display: none !important;
+    }
+    #ehouse-home-dots li {
+        float: left;
+        margin: 1rem;
+    }
+    #ehouse-home-dots {
+        top: auto !important;
+        bottom: 22px;
+        left: calc(50% - 120px);
+    }
+    .home-content-wrap {
+        width: 100%;
+        padding: 1rem;
+    }
+    #menu-header-menu-1 {
+        display: none;
+    }
+    .aux-lite-small {
+        margin: 0 auto;
+    }
+    .aux-elementor-header-menu.aux-nav-menu-element.aux-nav-menu-element-35cd6b27,
+    .aux-site-title-heading {
+        display: none !important;
+    }
+}
+
+#folder-img {
+    transform: scale(1.5);
+}
+
+#home-top-title {
+    color: #000;
+}
+
+.home-title-col {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+#home-top-title-second {
+    display: none;
+    text-align: right;
+    color: #000;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 992px) {
+    #home-top-title,
+    #home-top-title-second {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home-top-title,
+    #home-top-title-second {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home-top-title,
+    #home-top-title-second {
+        font-size: 18px;
+    }
+}
+
+#video-banner {
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background: #fff;
+    z-index: 6;
+}
+
+#bannerVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: calc(100vh - 240px);
+    top: 0;
+    left: 0;
+}
+
+.home-banner-arrow {
+    margin: -1rem 0 0;
+    cursor: pointer;
+}
+
+#video-bottom {
+    text-align: center;
+}
+
+#video-bottom h3 {
+    margin: 0;
+}
