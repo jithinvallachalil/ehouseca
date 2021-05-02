@@ -15,6 +15,13 @@
 	<?php wp_head(); ?>
   </head>
   <body>
+	  <!-- Site Loader -->
+	<div id="site-loader">
+		<div class="spinner-border mx-auto" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+	<!-- Site Content Starts -->
 	<div id="ehouse-logo">
 		<div class="container logo-container">
 			<div id="logo-wrapper">

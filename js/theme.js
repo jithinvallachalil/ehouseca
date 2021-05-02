@@ -14,4 +14,8 @@ jQuery(function($) {
             $(this).siblings('.services-dropdown').slideDown();
         }
     });
+
+    $(document).ready(function() {
+        $('#site-loader').fadeOut();
+    });
 });
