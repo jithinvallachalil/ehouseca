@@ -59,7 +59,7 @@
 							<a href="tel:+971504578645"><span class="elementor-icon-list-icon"><i aria-hidden="true" class="fas fa-phone-square-alt"></i></span><span class="elementor-icon-list-text">+971 504 57 8645</span></a>
 						</li>
 						<li class="elementor-icon-list-item">
-							<a href="mailto:Office@ehouse.ae"><span class="elementor-icon-list-icon"><i aria-hidden="true" class="auxicon auxicon-mail-1"></i></span><span class="elementor-icon-list-text">office@ehouse.ae</span></a>
+							<a href="mailto:Office@ehouse.ae"><span class="elementor-icon-list-icon"><i class="fas fa-envelope-square"></i></span><span class="elementor-icon-list-text">office@ehouse.ae</span></a>
 						</li>
 					</ul>
 				</div>
@@ -72,7 +72,7 @@
 							<a href="tel:+97165304001"><span class="elementor-icon-list-icon"><i aria-hidden="true" class="fas fa-phone-square-alt"></i></span><span class="elementor-icon-list-text">+971 653 04 001</span></a>
 						</li>
 						<li class="elementor-icon-list-item">
-							<a href="mailto:Office@ehouse.ae"><span class="elementor-icon-list-icon"><i aria-hidden="true" class="auxicon auxicon-mail-1"></i></span><span class="elementor-icon-list-text">office@ehouse.ae</span></a>
+							<a href="mailto:Office@ehouse.ae"><span class="elementor-icon-list-icon"><i class="fas fa-envelope-square"></i></span><span class="elementor-icon-list-text">office@ehouse.ae</span></a>
 						</li>
 					</ul>
 				</div>
@@ -80,7 +80,7 @@
 			<div class="footer-3 footer-col">
 				<h3>Leave a Message</h3>
 				<div id="footer-contact-form" class="footer-content">
-					<?php echo do_shortcode('[contact-form-7 id="2436" title="Footer Reach Us"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="3909" title="Footer"]'); ?>
 				</div>
 			</div>
 		</div>

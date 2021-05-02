@@ -443,51 +443,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     font-weight: 400;
 }
 
-.bg-blue {
-    background: linear-gradient(to right, #102d93, #0052ec) !important;
-}
-
-.bg-brown {
-    background: linear-gradient(to right, #6d3103, #a8621c) !important;
-}
-
-.bg-red {
-    background: linear-gradient(to right, #aa1834, #e7455c) !important;
-}
-
-.bg-grey {
-    background: linear-gradient(to right, #4c4c4c, #969696) !important;
-}
-
-.bg-green {
-    background: linear-gradient(to right, #02653d, #34cca0) !important;
-}
-
-.font-blue,
-.font-blue a {
-    color: #102d93 !important;
-}
-
-.font-brown,
-.font-brown a {
-    color: #6d3103 !important;
-}
-
-.font-red,
-.font-red a {
-    color: #aa1834 !important;
-}
-
-.font-grey,
-.font-grey a {
-    color: #4c4c4c !important;
-}
-
-.font-green,
-.font-green a {
-    color: #02653d !important;
-}
-
 #social-media-links .fab {
     font-size: 22px;
 }
@@ -1127,4 +1082,104 @@ h2.services-contact-title {
     background-color: #f9f9f9;
     border: none;
     padding: 0;
+}
+
+
+/* Contact Page */
+
+.contact-form-wrapper {
+    background: #f7f7f7;
+    max-width: 380px;
+    padding: 1rem 2rem;
+    text-align: left;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 5px #00000014;
+}
+
+.contact-form-wrapper label,
+.contact-form-wrapper .wpcf7-submit {
+    font-weight: 600;
+}
+
+.contact-form-wrapper .wpcf7-textarea {
+    max-height: 100px;
+}
+
+.contact-form-wrapper .wpcf7-textarea,
+.contact-form-wrapper input {
+    border: 1px solid #ccc !important;
+    border-radius: 1px;
+}
+
+.map-wrapper iframe {
+    min-width: 600px;
+    min-height: 400px;
+}
+
+#contact-map {
+    margin: 2rem 0;
+}
+
+#contact-map * {
+    color: #444444;
+    font-weight: 700;
+}
+
+.bg-blue {
+    background: linear-gradient(to right, #102d93, #0052ec) !important;
+}
+
+.bg-brown {
+    background: linear-gradient(to right, #6d3103, #a8621c) !important;
+}
+
+.bg-red {
+    background: linear-gradient(to right, #aa1834, #e7455c) !important;
+}
+
+.bg-grey {
+    background: linear-gradient(to right, #4c4c4c, #969696) !important;
+}
+
+.bg-green {
+    background: linear-gradient(to right, #02653d, #34cca0) !important;
+}
+
+.font-blue,
+.font-blue a,
+#services-list .font-blue a {
+    color: #102d93 !important;
+}
+
+.font-brown,
+.font-brown a,
+#services-list .font-brown a {
+    color: #6d3103 !important;
+}
+
+.font-red,
+.font-red a,
+#services-list .font-red a {
+    color: #aa1834 !important;
+}
+
+.font-grey,
+.font-grey a,
+#services-list .font-grey a {
+    color: #4c4c4c !important;
+}
+
+.font-green,
+.font-green a,
+#services-list .font-green a {
+    color: #02653d !important;
+}
+
+#services-content ul {
+    list-style: disc;
+}
+
+#footer-contact-form input {
+    color: #1d1d1d;
+    font-weight: 600;
 }
