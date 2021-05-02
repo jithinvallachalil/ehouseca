@@ -192,7 +192,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 #menu-header-menu-1 li a {
-    color: #000;
+    color: #191717 !important;
     font-weight: 700;
 }
 
@@ -284,10 +284,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     background-position: center !important;
 }
 
-#services-content .aux-sidebar.aux-sidebar-primary {
-    margin-top: -430px;
-}
-
 #aside-services .navbar-toggle.collapsed,
 #aside-services .navbar-brand {
     display: none;
@@ -297,6 +293,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     text-decoration: none;
     font-size: 15px !important;
     font-weight: 600;
+    color: #4e4e4e;
 }
 
 #services-list .navbar-nav {
@@ -725,9 +722,10 @@ h2.services-contact-title {
     background: linear-gradient(to right, #02653d, #34cca090);
 }
 
-#aside-services .dropdown-menu {
+
+/* #aside-services .dropdown-menu {
     display: none;
-}
+} */
 
 .service-toggle-wrap {
     position: relative;
@@ -852,6 +850,7 @@ h2.services-contact-title {
 
 .footer-content .elementor-icon-list-items {
     margin-top: 0;
+    padding: 0;
 }
 
 .mb-0 {
@@ -1005,9 +1004,10 @@ h2.services-contact-title {
 }
 
 .amazon-button-wrap {
-    max-width: 150px;
+    max-width: 166px;
     float: left;
     margin: 1rem;
+    text-align: center;
 }
 
 #services-list :after {
@@ -1023,4 +1023,108 @@ h2.services-contact-title {
 
 #services-menu>ul>li.dropdown>a.dropdown-toggle {
     text-transform: uppercase;
+}
+
+.bg-overlay {
+    display: flex;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#ehouse-logo {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.about-main-content p {
+    text-align: justify;
+}
+
+#boss-content i {
+    font-size: 27px;
+    margin: 15px 0;
+    color: #212529;
+}
+
+.boss-image {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.employee-img {
+    max-width: 200px;
+}
+
+.about-box {
+    padding: 1rem;
+    box-shadow: 0 0 6px 6px #0000000d;
+    margin: 10px;
+}
+
+#our-key-people {
+    position: relative;
+}
+
+#about-prev-button {
+    position: absolute;
+    left: -162px;
+    color: #000;
+    font-size: 46px;
+}
+
+#about-next-button {
+    position: absolute;
+    right: -162px;
+    color: #000;
+    font-size: 46px;
+}
+
+.employee-details-wrap {
+    display: flex;
+    align-items: center;
+}
+
+#core-values {
+    text-align: center;
+}
+
+#ehouse-body-content {
+    margin-top: 102px;
+}
+
+#services-content-wrap {
+    margin: 4rem 0;
+}
+
+#aside-services {
+    padding: 4rem 1rem;
+    display: flex;
+    height: 100%;
+    border-left: 1px solid #ccc;
+}
+
+.widget-title {
+    padding: 0 0 1.0625em;
+    margin-bottom: 1.875em;
+    margin-top: 0;
+    border-bottom: 1px #DEDEDE solid;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 150%;
+}
+
+#aside-services .dropdown-toggle::after {
+    display: none;
+}
+
+.services-dropdown {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 0;
 }
