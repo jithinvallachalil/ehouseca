@@ -1196,3 +1196,40 @@ h2.services-contact-title {
     background: #fff;
     align-items: center;
 }
+
+@media screen and (max-width: 1494px) {
+    #home-about-list li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #home-about-list li {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #home-about-list li {
+        width: calc(100%/3);
+    }
+    #home-about-list a:nth-child(4) li,
+    #home-about-list a:nth-child(5) li {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #home-about-list li {
+        width: calc(100%/2);
+    }
+    #home-about-list a:nth-child(5) li {
+        width: 100%;
+    }
+    #bannerVideo {
+        height: calc(100vh - 346px);
+    }
+    #home-about-list li {
+        font-size: 8px;
+    }
+}

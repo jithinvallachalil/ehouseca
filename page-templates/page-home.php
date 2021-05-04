@@ -24,7 +24,14 @@ get_header();
 
 <div id="video-banner">
 	<div id="video-bg">
-		<video autoplay loop id="bannerVideo">
+		<!-- Video Overlay -->
+		<div id="home-video-overlay"></div>
+		<!-- Home Video Play Button -->
+		<div id="home-play-button">
+			<i class="far fa-play-circle"></i>
+		</div>
+		<!-- Banner Video -->
+		<video loop id="bannerVideo">
 			<source src="<?php echo get_stylesheet_directory_uri(); ?>/images/5.mp4" type="video/mp4">
 		</video>
 	</div>
