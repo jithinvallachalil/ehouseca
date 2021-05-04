@@ -233,13 +233,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     margin-right: 11px;
 }
 
-.gif-home {
-    display: none;
-    position: absolute !important;
-    top: -370px !important;
-    left: -370px !important;
-}
-
 .main-menu .sub-menu {
     display: none;
 }
@@ -812,9 +805,10 @@ h2.services-contact-title {
     margin-bottom: 0;
 }
 
-#media-page {
+
+/* #media-page {
     margin-top: 106px;
-}
+} */
 
 #media-page-banner {
     display: flex;
@@ -978,6 +972,7 @@ h2.services-contact-title {
 
 #services-menu>ul>li.dropdown>a.dropdown-toggle {
     text-transform: uppercase;
+    white-space: break-spaces;
 }
 
 .bg-overlay {
