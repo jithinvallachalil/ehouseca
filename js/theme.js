@@ -18,6 +18,32 @@ jQuery(function($) {
         $('#bannerVideo').trigger('play').attr('controls', '');;
     });
 
+    $('#responsive-menu-trigger').on('click', function(e) {
+        e.preventDefault();
+
+    });
+
+    // Display Menu
+    $('#responsive-menu-trigger').on('click', function() {
+        $('#responsive-menu-wrapper').css('display', 'flex');
+    });
+
+    // Close Menu
+    $('#close-resp-menu').on('click', function(e) {
+        e.preventDefault();
+        $('#responsive-menu-wrapper').fadeOut();
+    });
+
+    $('#services-respmenu > a > i').on('click', function(e) {
+        e.preventDefault();
+        $('#services-responsive-menu').slideToggle();
+    });
+
+    // $('#services-responsive-menu .dropdown').on('click', function(e) {
+    //     e.preventDefault();
+    //     $(this).find(".subclass").css("visibility","visible");
+    // });
+
 });
 
 var myCarousel = document.querySelector('#about-page-slider')

@@ -7,7 +7,7 @@ get_header();
 <style>
 
 .about-item {
-    height: 100vh;
+    height: calc(100vh - 101.31px);
     background-size: cover !important;
     background-position: center !important;
 }
@@ -63,8 +63,9 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h1>Enterprise House</h1>
-                <h4>Chartered Accountants</h4>
+                <img id="ehouse-about-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ehouse-logo-title.png" alt="Ehouse About Logo">
+                <!-- <h1 id="about-logo-title"><span class="capital-letter">E</span>nterprise <span class="capital-letter">H</span>ouse</h1>
+                <h4>Chartered Accountants</h4> -->
             </div>
         </div>
         <div class="row">
@@ -88,27 +89,32 @@ get_header();
 <div id="boss-content">
     <div class="container">
         <div class="row">
-            <div class="col-xxl-6 col-lg-5 text-center align-self-center">
-                <div class="d-flex align-self-center">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/boss.png" class="img-fluid boss-image" />
-                </div>
-            </div>
-            <div class="col-xxl-6 col-lg-7">
-                <h2>Message from The Managing Partner</h2>
-                <h4>Atik Munshi</h4>
-                <div class="w-100">
-                    <a href="mailto:munshi.atik@ehouse.ae">
-                        <i class="fas fa-envelope-square"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/atik-munshi-28a09769/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-                <p>Atik Munshi is qualified Fellow Chartered Accountant, Certified Fraud Examiner, Certified Internal Control Auditor and member of prestigious organizations in the field of accountancy and fraud investigations. After nearly 25 years working as Senior equity partner and Board Member at a top 10 accounting firm he embarked on a new journey under the banner“Enterprise House”.</p>
-                <p>Atik Munshi is specialized in areas of Mergers & Acquisitions, Forensic Accounting, New Business setup/expansion/diversification advice, Formation of Offshore companies and local companies in UAE and Audit. Apart from the above he has a vast experience for Compliance advisory, restructuring advisory, Advisory on many complex business issues and in the field of Real Estate where he covers areas like Project Feasibility, Project Selection, Project Marketing, and negotiations. Mr. Munshi has acted as engagement partner for several listed entities.</p>
-                <p>Atik Munshi is a thinker, leader and a regular writer with various local news publications like Khaleej Times, Gulf News and author of several books and acted as Board member in some reputed UAE companies.</p>
+            <div class="col-12">
+                <?php the_field('managing_director_content'); ?>
             </div>
         </div>
+            <!-- <div class="col-xxl-6 col-lg-5 text-center align-self-center"> -->
+                <!-- <div class="d-flex align-self-center">
+                    <img src="<?php // echo get_stylesheet_directory_uri(); ?>/images/boss.png" class="img-fluid boss-image" />
+                </div> -->
+            <!-- </div> -->
+            <!-- <div class="col-xxl-6 col-lg-7"> -->
+                <!-- <h2>Message from the Managing Partner</h2>
+                <h4>Atik Munshi</h4>
+                <div class="w-100">
+                    <a href="mailto:munshi.atik@ehouse.ae"><i class="fas fa-envelope-square"></i></a>
+                    <a href="https://www.linkedin.com/in/atik-munshi-28a09769/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+				<p class="font-blue">We, Enterprise House Chartered Accountants, have established our self as one of the leading Audit and Advisory firms in the region, and I would like to emphasize the key message of our firm. Efficient services with ethics at heart are our motto. We are well-positioned to deliver impeccable service and value to our clients. We understand the client’s needs both commercially and culturally and can provide personalized and timely services to meet the client's expectations. Our high quality of professional services to SMEs has made us a market leader in the small and medium enterprise sector in UAE.</p>
+                <p class="font-blue">That is one of the reasons we have gained the trust of our clients during my 25 years of professional service in the UAE. With our industry knowledge and experience, we help our clients make informed and effective business decisions; we believe in mutual growth strategy by staying independent and committed to professional ethics. As we offer most of the professional services that a business needs under our banner, we call ourselves a one-stop solution.
+                </p>
+                <p>Atik Munshi is qualified Fellow Chartered Accountant, Certified Fraud Examiner, Certified Internal Control Auditor and member of prestigious organizations in the field of accountancy and fraud investigations. After nearly 25 years working as Senior equity partner and Board Member at a top 10 accounting firm he embarked on a new journey under the banner“Enterprise House”.</p>
+            </div>
+            <div class="col-12">
+                <p>Atik Munshi is specialized in areas of Mergers & Acquisitions, Forensic Accounting, New Business setup/expansion/diversification advice, Formation of Offshore companies and local companies in UAE and Audit. Apart from the above he has a vast experience for Compliance advisory, restructuring advisory, Advisory on many complex business issues and in the field of Real Estate where he covers areas like Project Feasibility, Project Selection, Project Marketing, and negotiations. Mr. Munshi has acted as engagement partner for several listed entities.</p>
+                <p>Atik Munshi is a thinker, leader and a regular writer with various local news publications like Khaleej Times, Gulf News and author of several books and acted as Board member in some reputed UAE companies.</p>
+            </div> -->
+        <!-- </div> -->
     </div>
 </div>
 
@@ -194,13 +200,13 @@ get_header();
                             <div class="about-box">
                                 <div class="row">
                                     <div class="col-lg-6 text-center">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/teams/Tosif.png" class="img-fluid employee-img" alt="TOSIF SHEIKH">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/teams/Aldrin.png" class="img-fluid employee-img" alt="TOSIF SHEIKH">
                                     </div>
                                     <div class="col-lg-6 employee-details-wrap">
                                         <div class="emp-carousel-details">
-                                            <h4>TOSIF SHEIKH</h4>
-                                            <h6>Partner</h6>
-                                            <p>Tosif Sheikh is qualified Chartered Accountant & also awarded with CFA Charter holder designation from the CFA Institute, USA. He completed his graduation in commerce from DAVV, India. He had an experience of working as an Executive at one of the largest conglomerate listed on Indian stock exchange.</p>
+                                            <h4>Aldrin</h4>
+                                            <h6>Legal & Compliance Officer</h6>
+                                            <p>A Lawyer and a High Court practitioner from India, Aldrin is a technically competent, dynamic and result oriented professional with well over 6 years of experience across the fields of Intellectual Property Laws, Commercial Laws, Cyber Laws, Tax Laws, &amp; Advisory.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -211,13 +217,13 @@ get_header();
                             <div class="about-box">
                                 <div class="row">
                                     <div class="col-lg-6 text-center">
-                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/teams/Arafath.png" class="img-fluid employee-img" alt="TOSIF SHEIKH">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/teams/Ruhina.png" class="img-fluid employee-img" alt="TOSIF SHEIKH">
                                     </div>
                                     <div class="col-lg-6 employee-details-wrap">
                                         <div class="emp-carousel-details">
-                                            <h4>ARAFATH HUSSAIN</h4>
-                                            <h6>Partner</h6>
-                                            <p>Arafath Hussain is a qualified B.tech Engineer in Computer Science, Cisco Certified Engineer and Lean Six Sigma specialist (Green Belt). He is a seasoned professional and has experience in this field for more than ten years and is responsible for setting up and leading our Corporate Advisory practice.</p>
+                                            <h4>Ruhina</h4>
+                                            <h6>Senior Consultant</h6>
+                                            <p>Ruhina Shaikh has extensive experience in the field of IT Systems, Audit and in Business Development for the formation of companies in Offshore, Free zones, and Mainland in UAE. She has versatile experience in dealing with multinational clients. She also has experience in the establishing IT framework and Security field of IT</p>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +269,7 @@ get_header();
             <div class="col-lg-4">
                 <div class="core-item">
                     <h4>Accurate Solutions</h4>
-                    <p><b>We listen and guide</b></p>
+                    <p><b>We Listen and Guide</b></p>
                     <p>We provide the best solution when we listen to the need of our clients</p>
                 </div>
             </div>

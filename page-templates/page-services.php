@@ -14,38 +14,38 @@ get_header(); ?>
                     <h2><?php the_title(); ?></h2>
                 </div>
                 <?php 
-                    if(get_field('other_services_option')) {
+                    // if(get_field('other_services_option')) {
                     ?>
                         <ul id="banner-services">
-                            <li>Other Services: </li>
-                            <?php if ((get_field('current_service_page') != 'audit: Audit')) { ?>
+                            <!-- <li>Other Services: </li> -->
+                            <?php // if ((get_field('current_service_page') != 'audit: Audit')) { ?>
                                 <a href="<?php echo site_url(); ?>/our-services/audit-risks/">
                                     <li id="audit">Audits and Risks</li>
                                 </a>
-                            <?php } ?>
-                            <?php if ((get_field('current_service_page') != 'co-formations: Company Formations')) { ?>
+                            <?php // } ?>
+                            <?php // if ((get_field('current_service_page') != 'co-formations: Company Formations')) { ?>
                                 <a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/">
                                     <li id="co-formations">Co. Formations & Corp. Services</li>
                                 </a>
-                            <?php } ?>
-                            <?php if ((get_field('current_service_page') != 'advisory: Business Advisory')) { ?>
+                            <?php // } ?>
+                            <?php // if ((get_field('current_service_page') != 'advisory: Business Advisory')) { ?>
                                 <a href="<?php echo site_url(); ?>/our-services/business-advisory/">
                                     <li id="advisory">Business Advisory</li>
                                 </a>
-                            <?php } ?>
-                            <?php if ((get_field('current_service_page') != 'vat: VAT, Excise & Tax')) { ?>
+                            <?php // } ?>
+                            <?php // if ((get_field('current_service_page') != 'vat: VAT, Excise & Tax')) { ?>
                                 <a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/">
                                     <li id="vat">VAT, Excise & Tax</li>
                                 </a>
-                            <?php } ?>
-                            <?php if ((get_field('current_service_page') != 'intellectual: Intellectual Properties')) { ?>
+                            <?php // } ?>
+                            <?php // if ((get_field('current_service_page') != 'intellectual: Intellectual Properties')) { ?>
                                 <a href="<?php echo site_url(); ?>/our-services/intellectual-properties/">
                                     <li id="intellectual">Intellectual Properties</li>
                                 </a>
-                            <?php } ?>
+                            <?php // } ?>
                         </ul>
                     <?php  
-                    }
+                    // }
                 ?>
             </div>
         </div>
@@ -55,12 +55,12 @@ get_header(); ?>
         <div id="services-content" class="aux-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9">
+                <div class="col-xxl-9 col-xl-8">
                     <div id="services-content-wrap">
                         <?php the_content(); ?>
                     </div>                            
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xxl-3 col-xl-4">
                     <aside id="aside-services" class="aux-sidebar aux-sidebar-primary">
                         <div class="sidebar-inner">
                             <div class="sidebar-content">

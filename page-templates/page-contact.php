@@ -30,7 +30,7 @@ get_header();
     <div class="container">
         <div class="row">
             <!-- Dubai Address -->
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <p>Suite 209,<br>
                 Blue Tower,<br>
                 Sheikh Zayed Road,<br>
@@ -43,11 +43,11 @@ get_header();
                     <a href="mailto: office@ehouse.ae"><i class="fas fa-envelope"></i> office@ehouse.ae</a>
                 </p>
                 <div class="map-wrapper">
-                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Blue%20tower&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="Blue tower" aria-label="Blue tower"></iframe>
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.451198324181!2d55.278996415010035!3d25.221723683884736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab1a91107056572e!2sEnterprise%20House-%20Company%20Formations%20%26%20Corporate%20Services%20in%20UAE!5e0!3m2!1sen!2sae!4v1621160843181!5m2!1sen!2sae" title="Blue tower" aria-label="Blue tower"></iframe>
                 </div>
             </div>
-            <!-- Dubai Address -->
-            <div class="col-md-6">
+            <!-- Sharjah Address -->
+            <div class="col-lg-6">
                 <p>Suite 1502,<br>
                 Golden Tower,<br>
                 Buhairah Corniche,<br>
@@ -60,7 +60,7 @@ get_header();
                     <a href="mailto: office@ehouse.ae"><i class="fas fa-envelope"></i> office@ehouse.ae</a>
                 </p>
                 <div class="map-wrapper">
-                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Enterprise%20House%20sharjah&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="Enterprise House sharjah" aria-label="Enterprise House sharjah"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1274.8726539947031!2d55.38485518989919!3d25.34166000815698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b6d7daedf41%3A0xbf06b8f8ef01afe!2sEnterprise%20House%20Chartered%20Accountants-%20Audit%20Firm%20%26%20Tax%20Consultant%20in%20UAE!5e0!3m2!1sen!2sin!4v1621837522611!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" title="Enterprise House sharjah" aria-label="Enterprise House sharjah"></iframe>
                 </div>
             </div>
         </div>

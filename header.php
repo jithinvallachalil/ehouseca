@@ -22,7 +22,7 @@
 		</div>
 	</div>
 	<!-- Site Content Starts -->
-	<div id="ehouse-logo">
+	<div id="ehouse-logo" <?php if (is_page_template('page-templates/page-home.php')) { echo 'class="logo-white-bg"'; } ?>>
 		<div class="container logo-container">
 			<div id="logo-wrapper">
 				<!-- <h2 class="logo-title">Enterprise House</h2>
@@ -31,9 +31,9 @@
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ehouse-logo.png" id="site-logo" />
 				</a>
 			</div>
+			<!-- Main Menu -->
 			<div id="menu-wrapper">
 				<nav class="menu-header-menu-container">
-
 					<ul id="menu-header-menu-1" class="menu" data-type="horizontal">
 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2390 current_page_item menu-item-2392">
 							<a href="<?php echo site_url(); ?>/" aria-current="page">Home</a>
@@ -132,4 +132,105 @@
 				<i id="responsive-menu-trigger" class="fa fa-bars" aria-hidden="true"></i>
 			</div>
 		</div>
+	</div>
+	<!-- Responsive Menu -->
+	<div id="responsive-menu-wrapper">
+		<nav class="responsive-menu-container">
+			<ul id="responsive-menu" class="menu">
+				<li class="dropdown">
+					<div class="text-right">
+						<div id="close-resp-menu">
+							<i class="far fa-times-circle"></i>
+						</div>
+					</div>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2390 current_page_item menu-item-2392">
+					<a href="<?php echo site_url(); ?>/" aria-current="page">Home</a>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-535">
+					<a href="<?php echo site_url(); ?>/about-us/">About Us</a>
+				</li>
+				<li id="services-respmenu" class="main-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2446">
+					<a class="text-dark" href="<?php echo site_url(); ?>/our-services/">Our Services <i class="fas fa-caret-down"></i></a>
+					<div id="services-resplist">
+						<nav class="">
+							<div class="container-fluid px-0 d-block">
+								<div id="services-responsive-menu">
+									<ul class="nav navbar-nav">
+										<li class="dropdown">
+											<a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Audit &amp; Risks </span></a>
+											<ul class="dropdown-menu">
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/external-audits/">External Audits</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/rera-audits/">RERA Audits</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/due-diligence/">Due Diligence</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/bookkeeping-and-accounting-services/">Bookkeeping and  Accounting Services</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/liquidation-report/">Liquidation Report</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/internal-audit/">Internal Audit</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/special-purpose-audit/">Special Purpose Audit</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/reviews/">Reviews</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/audit-risks/agreed-upon-procedures/">Agreed Upon Procedures</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Comp Formations & Co Services </a>
+											<ul class="dropdown-menu">
+												<li><a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/mainland-company-formation/">Mainland Company Formation</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/free-zones-company-formation/">Free Zones Company Formation</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/offshore-company-formation/">Offshore Company Formation</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/secretarial-services/">Secretarial Services</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/pro-services/">PRO Services</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/visa-assistance/">Visa Assistance</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/local-sponsor-arrangement/">Local Sponsor Arrangement</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/company-formations-and-corporate-services/legal-translation/">Legal Translation</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="<?php echo site_url(); ?>/our-services/business-advisory/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Business Advisory </a>
+											<ul class="dropdown-menu">
+												<li><a href="<?php echo site_url(); ?>/our-services/business-advisory/business-valuation-services/">Business Valuation Services</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/business-advisory/variance-analysis/">Variance Analysis</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/business-advisory/budgeting-financial-projection/">Budgeting &amp; Financial Projection</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/business-advisory/investment-analysis/">Investment Analysis</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/business-advisory/restructuring-services/">Restructuring Services</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/business-advisory/succession-planning/">Succession Planning</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/business-advisory/feasibility-reports/">Feasibility Reports</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/business-advisory/merger-acquisitions/">Merger &amp; Acquisitions</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VAT, Excise &amp; Tax </a>
+											<ul class="dropdown-menu">
+												<li><a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/transfer-pricing/">Transfer Pricing</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/value-added-tax/">Value-Added Tax</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/excise-tax/">Excise Tax</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/custom-duty/">Custom Duty</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/tax-consulting/">Tax Consulting</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/economic-substance-reporting-esr/">Economic Substance Reporting (ESR)</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/international-tax-restructuring/">International Tax Restructuring</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/vat-excise-tax/ubo-reporting/">UBO Reporting</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a href="<?php echo site_url(); ?>/our-services/intellectual-properties/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Intellectual Properties </a>
+											<ul class="dropdown-menu">
+												<li><a href="<?php echo site_url(); ?>/our-services/intellectual-properties/trademark-advisory-registration/">Trademark Advisory &amp; Registration</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/intellectual-properties/patent-registration/">Patent Registration</a></li>
+												<li><a href="<?php echo site_url(); ?>/our-services/intellectual-properties/copyright-registration/">Copyright Registration</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+						</div>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-544">
+					<a href="<?php echo site_url(); ?>/blog/">Media &amp; Blogs</a>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-536">
+					<a href="<?php echo site_url(); ?>/contact-us/">Contact Us</a>
+				</li>
+			</ul>
+
+		</nav>
 	</div>
